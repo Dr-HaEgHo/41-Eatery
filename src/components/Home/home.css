@@ -1,0 +1,119 @@
+.home-body{
+    background: #f5f5f5;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    padding: 3rem 0 0 0;
+    justify-content: space-between;
+    /* background: #f9f9f9; */
+}
+
+
+.content{
+    width: 50%;
+    padding-bottom: 2rem
+}
+.cont{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color:rgb(172, 172, 172);
+}
+
+
+
+.rest{
+    color: rgb(231, 157, 19);
+    font-family: serif;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(29, 29, 29);
+    margin: 0 0 ;
+    line-height: 70px
+}
+
+.image img{
+    width: 510px;
+}
+
+.counts{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 5rem 0 ;
+}
+
+.counts h2{
+    font-size: 55px;
+    color:rgb(231, 157, 19);
+    font-weight: 600;
+    line-height: 40px;
+}
+.counts p{
+    text-align :center;
+    font-size: 20px;
+    line-height: 0;
+    color:rgb(79, 79, 79);
+    font-weight: 600;
+}
+
+.section-2{
+    background: #f9f9f9;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    line-height: 0;
+}
+
+.feat{
+    font-family: serif;
+    font-size: 20px;
+    color:rgb(231, 157, 19);
+    margin-bottom :3rem;
+}
+
+.features h2{
+    font-size: 40px;
+    color:rgb(29, 29, 29);
+    font-style: none;
+}
+
+.feat-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 2rem;
+}
+
+.feat-cont div{
+    width: 22%;
+    line-height: 20px;
+    text-align: center;
+}
+
+.feat-cont h3{
+    font-size: 20px;
+    color:rgb(29, 29, 29);
+}
+
+.feat-cont img{
+    width: 70px
+}
+
+.feat-cont p{
+    font-size: 15px;
+    font-weight: 500;
+    color:rgb(79, 79, 79)
+}
