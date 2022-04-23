@@ -27,7 +27,7 @@ const Products = () => {
                               </div>
                               <div className='num-cart'>
                                   <p>$30</p>
-                                  <span role='img' aria-hidden='true'>🛒</span>
+                                  {/* <span role='img' aria-hidden='true'>🛒</span> */}
 
                               </div>
                           </div>
@@ -48,7 +48,7 @@ const Products = () => {
                               </div>
                               <div className='num-cart'>
                                   <p>$30</p>
-                                  <p>🛒</p>
+                                  {/* <p>🛒</p> */}
 
                               </div>
                           </div>
@@ -69,7 +69,7 @@ const Products = () => {
                               </div>
                               <div className='num-cart'>
                                   <p>$30</p>
-                                  <p>🛒</p>
+                                  {/* <p>🛒</p> */}
 
                               </div>
                           </div>

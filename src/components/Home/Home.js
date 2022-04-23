@@ -4,10 +4,7 @@ import snack from '../../snack.png'
 import vegetarian from '../../vegetarian.png'
 import support from '../../customer-service.png'
 import './home.css'
-import About from '../About/About'
-import Products from '../Products/Products'
-import Contact from '../Contact/Contact'
-import Footer from '../Footer/Footer'
+
 
 const Home = () => {
     return <div className='home-body'>
