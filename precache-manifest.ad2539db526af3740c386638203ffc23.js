@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "d934ff23d66f59a336c0",
-    "url": "/41-Eatery/static/css/main.a2a125d9.chunk.css"
+    "revision": "5b664f55ecfc5769f153",
+    "url": "/41-Eatery/static/css/main.a2d08b5a.chunk.css"
   },
   {
-    "revision": "d934ff23d66f59a336c0",
-    "url": "/41-Eatery/static/js/main.d934ff23.chunk.js"
+    "revision": "5b664f55ecfc5769f153",
+    "url": "/41-Eatery/static/js/main.5b664f55.chunk.js"
   },
   {
-    "revision": "4b1b1bee0e8dc363b147",
-    "url": "/41-Eatery/static/js/1.4b1b1bee.chunk.js"
+    "revision": "10bd46414a6a77f6530b",
+    "url": "/41-Eatery/static/js/1.10bd4641.chunk.js"
   },
   {
     "revision": "959e037c3d9c888989f5",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/41-Eatery/static/media/spag.223cd405.jpg"
   },
   {
-    "revision": "741fb8adf5c0ad84dd786218b399758e",
+    "revision": "9b05f8b4b4dba79e4f5e4c64026f511e",
     "url": "/41-Eatery/index.html"
   }
 ];
