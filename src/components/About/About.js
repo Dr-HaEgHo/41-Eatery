@@ -2,7 +2,7 @@ import React from 'react'
 import about from '../../about.png'
 import './about.css'
 
-function About() {
+const About = () => {
     return <div className='about-body'>
         <div className='container'>
             <p className='bout'>— About Us</p>

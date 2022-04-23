@@ -2,7 +2,7 @@ import React from 'react'
 import './contact.css'
 import dish from '../../dish.png'
 
-function Contact() {
+const Contact = () => {
   return (
       <div className='contact-body'>
           <img src={dish} alt='dish'></img>

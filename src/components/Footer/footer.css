@@ -10,14 +10,16 @@
     border-right: .5px #555 solid;
 }
 
-.footer-logo p{
+.footer-logo a{
     font-weight: 700;
-    font-size: 16px;
+    color: rgb(231, 157, 19);
+    font-size: 20px;
     cursor: pointer;
     width: fit-content;
+    text-decoration: none;
 }
 
-.footer-logo p:hover{
+.footer-logo a:hover{
     text-decoration: underline;
 }
 

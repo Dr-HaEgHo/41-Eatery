@@ -2,20 +2,20 @@ import React from 'react'
 import './footer.css'
 
 
-function Footer() {
+const Footer = () => {
   return (
       <div className='footer-body'>
           <div className='container'>
               <div className='footer'>
                 <div className='footer-logo'>
-                    <p>41-eatery</p>
+                    <p><a href='/'>41-eatery</a></p>
                   </div>
                   <div className='links'>
                       <ul>
-                          <li><a href='/#'>About</a></li>
-                          <li><a href='/#'>Home</a></li>
-                          <li><a href='/#'>Contact</a></li>
-                          <li><a href='/#'>Products</a></li>
+                          <li><a href='/about'>About</a></li>
+                          <li><a href='/'>Home</a></li>
+                          <li><a href='/contact'>Contact</a></li>
+                          <li><a href='/products'>Products</a></li>
                       </ul>
                   </div>
                   <div className='details'>
@@ -27,7 +27,7 @@ function Footer() {
                   </div>
               </div>
           </div>
-              <div className='copy'>
+              <div className='copy'> 
                     <p>Capstone Project Trial by Awogbuyi Timothy</p>
               </div>
       </div>

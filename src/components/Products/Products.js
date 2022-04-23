@@ -4,7 +4,7 @@ import meatball from '../../meatball.jpg'
 import pizza from '../../pizza.jpg'
 import spag from '../../spag.jpg'
 
-function Products() {
+const Products = () => {
   return (
       <div className='prod-body'>
           <div className='container product'>
@@ -27,7 +27,7 @@ function Products() {
                               </div>
                               <div className='num-cart'>
                                   <p>$30</p>
-                                  <p>🛒</p>
+                                  <span role='img' aria-hidden='true'>🛒</span>
 
                               </div>
                           </div>

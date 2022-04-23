@@ -9,7 +9,7 @@ import Products from '../Products/Products'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 
-function Home() {
+const Home = () => {
     return <div className='home-body'>
         <div className='container hero'> 
             <div className='content'>
@@ -69,16 +69,16 @@ function Home() {
         </div>
 
         {/* About */}
-        <About />
+        {/* <About /> */}
         
         {/* Products */}
-        <Products />
+        {/* <Products /> */}
         
         {/* Contact */}
-        <Contact />
+        {/* <Contact /> */}
         
         {/* Footer */}
-        <Footer/>
+        {/* <Footer/> */}
     </div>
 }
 
