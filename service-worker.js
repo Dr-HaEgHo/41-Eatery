@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/41-Eatery/precache-manifest.ad2539db526af3740c386638203ffc23.js"
+  "/41-Eatery/precache-manifest.29adb0bee197dc6aeb8ea592f70377ad.js"
 );
 
 workbox.clientsClaim();
