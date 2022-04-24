@@ -4,6 +4,7 @@ import snack from '../../snack.png'
 import vegetarian from '../../vegetarian.png'
 import support from '../../customer-service.png'
 import './home.css'
+import Testimonials from '../Testimonials/Testimonials'
 
 
 const Home = () => {
@@ -64,7 +65,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
-
+        <Testimonials/>
         {/* About */}
         {/* <About /> */}
         
