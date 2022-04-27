@@ -19,6 +19,12 @@
 .logo a:hover {
     text-decoration: underline;
 }
+
+.bars-div{
+    display :none;
+    color:rgb(231, 157, 19);
+    font-size: 20px;
+}
  
  .navbar{
      display: flex;
@@ -31,4 +37,25 @@
      display: flex;
      gap: 2rem;
      list-style: none;
+ }
+
+
+ @media (max-width: 540px){
+    .logo a {
+        font-weight: 700;
+        font-size: 16px;
+        cursor: pointer;
+        color: rgb(231, 157, 19);
+        text-decoration: none;
+    }
+    .nav-links{
+        display: none;
+    }
+
+    .btn-div{
+        display: none;
+    }
+    .bars-div{
+        display: block;
+    }
  }

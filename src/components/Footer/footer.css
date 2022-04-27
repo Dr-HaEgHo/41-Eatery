@@ -1,7 +1,6 @@
 .footer-body {
     background: rgb(29, 29, 29);
     padding: 5rem 0 0rem 0;
-
 }
 
 .footer-logo {
@@ -61,4 +60,45 @@
 .copy a:hover {
     color: rgb(231, 157, 19);
     text-decoration: underline;
+}
+
+@media(max-width: 540px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 3rem;
+        /* background: yellow; */
+    }
+    .links{
+        flex: 1;
+        height: fit-content;
+        border: none;
+        padding: 0;
+        font-size: 12px;
+    }
+    .links a{
+        font-size: 12px;
+    }
+    .details{
+        border: none;
+        padding: 0;
+    }
+    .details a{
+        font-size: 12px;
+    }
+    .copy{
+        text-align: center;
+        margin: 5rem 0 0 0;
+        width: 100%;
+        color: #555;
+        background: #111;
+        padding: 1rem 0;
+        font-size: 12px;
+    }
+    .copy p{
+        width: 70%;
+        margin: auto;
+    }
 }
