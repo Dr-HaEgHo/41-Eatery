@@ -102,33 +102,33 @@ function Products() {
     <section className="products">
       <div className="container ">
         <div className="products__header">
-        <h1>Products</h1>
-      </div>
+          <h1>Products</h1>
+        </div>
 
-      <div className="products__search">
-        <input
-          type="text"
-          placeholder="Search..."
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
-      </div>
+        <div className="products__search">
+          <input
+            type="text"
+            placeholder="Search..."
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+          />
+        </div>
 
-      {/* This will be shown when the result is empty */}
-      {productList.length === 0 && (
-        <p className="emptyResult">Search result is empty</p>
-      )}
+        {/* This will be shown when the result is empty */}
+        {productList.length === 0 && (
+          <p className="emptyResult">Search result is empty</p>
+        )}
 
-      {/* This will be shown when there is at least a product in the productList */}
-      {searchInput !== "" && productList.length > 0 && (
-        <p className="searchHeader">Your search result:</p>
-      )}
+        {/* This will be shown when there is at least a product in the productList */}
+        {searchInput !== "" && productList.length > 0 && (
+          <p className="searchHeader">Your search result:</p>
+        )}
 
-      <div className="products__list">
-        {productList.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
+        <div className="products__list">
+          {productList.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
       </div>
     </section>
   );

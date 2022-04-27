@@ -1,106 +1,96 @@
- .navbar-div{
-    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
-    font-family: 'Poppins',sans-serif;
-    background: #f5f5f5;
- }
- 
-.logo  {
-    color: rgb(231, 157, 19);
+.navbar-div {
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); */
+  font-family: "Poppins", sans-serif;
+  background: #f5f5f5;
+}
+
+.logo {
+  color: rgb(231, 157, 19);
 }
 
 .logo a {
-    font-weight: 700;
-    font-size: 21px;
-    cursor: pointer;
-    color: rgb(231, 157, 19);
-    text-decoration: none;
+  font-weight: 700;
+  font-size: 21px;
+  cursor: pointer;
+  color: rgb(231, 157, 19);
+  text-decoration: none;
 }
 
 .logo a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.bars-div{
-    display :none;
-    color:rgb(231, 157, 19);
-    font-size: 20px;
+.bars-div {
+  display: none;
+  color: rgb(231, 157, 19);
+  font-size: 20px;
 }
- 
- .navbar{
-     display: flex;
-     align-items: center;
-     padding: 1rem 10px;
-     justify-content: space-between;
- }
 
- .nav-links{
-     display: flex;
-     gap: 2rem;
-     list-style: none;
- }
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 10px;
+  justify-content: space-between;
+}
 
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
 
 .side-bar {
-    display: none;
+  display: none;
 }
 
+@media (max-width: 540px) {
+  .logo a {
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(231, 157, 19);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: none;
+  }
 
- @media (max-width: 540px){
-    .logo a {
-        font-weight: 700;
-        font-size: 16px;
-        cursor: pointer;
-        color: rgb(231, 157, 19);
-        text-decoration: none;
-    }
-    .nav-links{
-        display: none;
-    }
+  .btn-div {
+    display: none;
+  }
+  .bars-div {
+    display: block;
+    cursor: pointer;
+  }
 
-    .btn-div{
-        display: none;
-    }
-    .bars-div{
-        display: block;
-    }
-   
-    
+  /* ---------------------------------------------------------------------side bar */
+  .side-bar {
+    display: block;
+    height: auto;
+    width: 0px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0px;
+    background: #f5f5f5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    z-index: 300;
+    transition: 0.2s ease all;
+  }
 
+  .side-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0 0 0;
+  }
 
+  .side-bar h1 {
+    color: rgb(231, 157, 19);
+  }
 
-
-
-/* ---------------------------------------------------------------------side bar */
-    .side-bar {
-        display: block;
-        height: 40vh;
-        width: 0px;
-        position: absolute;
-        overflow: hidden;
-        top: 0;
-        right: 0px;
-        background: #f5f5f5;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-        border-bottom-left-radius: 10px;
-        z-index: 300;
-        transition: .2s ease all;
-    }
-    
-    .side-links {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 2rem 0 0 0;
-    
-    }
-    
-    .side-bar h1 {
-        color: rgb(231, 157, 19);
-    
-    }
-    
-    .side-links li {
-        border-bottom: 0.5px rgba(0, 0, 0, 1) solid;
-    
-    }
- }
+  .side-links li {
+    border-bottom: 0.5px rgba(0, 0, 0, 1) solid;
+  }
+}
