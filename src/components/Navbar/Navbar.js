@@ -7,10 +7,12 @@ const Navbar = () => {
 
     const sideBar = document.getElementById('saide');
     const showSide = () => {
-        sideBar.classList.add('active');
+        sideBar.style.width = "140px";
+        sideBar.style.padding = "1rem";
     }
     const closeSide = () => {
-        sideBar.classList.remove('active')
+        sideBar.style.width = "0px";
+        sideBar.style.padding = "0rem";
     }
 
 
