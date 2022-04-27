@@ -24,7 +24,7 @@
 .menu-div {
   width: 90%;
   padding: 3rem 0;
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   margin-bottom: 2rem;
   flex-wrap: wrap;
@@ -115,4 +115,23 @@
   font-weight: 700;
   font-size: 17px;
   font-style: italic;
+}
+
+@media(max-width: 540px){
+  .pic {
+    background: rgb(231, 157, 19);
+    height: 200px;
+    border-radius: 10px;
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+  }
+  .menu-cont h4 {
+    width: 70%;
+    margin: 1rem 0;
+    color: rgb(29, 29, 29);
+    height: 2rem;
+    line-height: 12px;
+    font-size: 12px;
+  }
 }

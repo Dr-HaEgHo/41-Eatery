@@ -112,3 +112,41 @@
 .t-image img {
     width: 100%;
 }
+
+@media(max-width: 540px){
+    .testi-cont{
+        width: 100%;
+        padding: 0
+    }
+    .t-image{
+        display: none;
+    }
+    .testi-left-cont {
+        width: 100%;
+        text-align:center ;
+    }
+    .testi-h2 {
+        font-size: 30px;
+        color: rgb(29, 29, 29);
+        text-align: center;
+        margin: 2rem 0rem 2rem 0rem;
+        line-height: 40px;
+        width: 100%;
+    }
+    .testi{
+        text-align: left;
+    }
+    .testi-client{
+        margin: 3rem 0 -7px 0;
+        text-align: right;
+        font-size: 13px;
+    }
+    .testimonials-body {
+        padding: 5rem 0;
+    }
+    .right{
+        text-align: right;
+        font-size: 13px;
+        
+    }
+}

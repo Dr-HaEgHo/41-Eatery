@@ -2,11 +2,24 @@ import React from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
 
+
 const Navbar = () => {
+
+    const sideBar = document.getElementById('saide');
+    const showSide = () => {
+        sideBar.style.width = "140px";
+        sideBar.style.padding = "1rem";
+    }
+    const closeSide = () => {
+        sideBar.style.width = "0px";
+        sideBar.style.padding = "0rem";
+    }
+
+
     return <div className='navbar-div'>
         <div className='container navbar'>
             <div className='logo'>
-                <Link to="/"><p>41-eatery</p></Link>
+                <Link to="/"><p>41-Eatery</p></Link>
             </div>
             <ul className='nav-links'>
                 <li><Link to='/'> Home </Link></li>
@@ -14,11 +27,25 @@ const Navbar = () => {
                 <li><Link to='/contact'> Contact</Link></li>
                 <li><Link to='/about'> About </Link></li>
             </ul>
-            <div>
+            <div className='bars-div'>
+                <h1 onClick={showSide}>=</h1>
+            </div>
+            <div className='btn-div'>
                 <button className='btn-light'>Login</button>
                 <button className='btn-dark'>Sign Up</button>
             </div>
-       </div>
+        </div>
+
+        {/* ------------------------------------------------------------------------sidebar */}
+          <div id="saide" className='side-bar'>
+            <h1 onClick={closeSide}>x</h1>
+            <ul className='side-links'>
+                <li onClick={closeSide}><Link to='/'> Home </Link></li>
+                <li onClick={closeSide}><Link to='/products'> Products </Link></li>
+                <li onClick={closeSide}><Link to='/contact'> Contact</Link></li>
+                <li onClick={closeSide}><Link to='/about'> About </Link></li>
+            </ul>
+      </div>
     </div>
 }
 

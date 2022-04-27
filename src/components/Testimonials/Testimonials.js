@@ -13,9 +13,9 @@ const Testimonials = () => {
                         "41-Eatery is an awesome place. Food is everything we are. It's an extension of nationalist feeling, ethnic feeling, your personal history, your province"
                     </p>
                     <h4 className='testi-client'>
-                        Anne Jared 
+                        — Anne Jared 
                     </h4>
-                    <p className='cont'>Artist</p>
+                    <p className='cont right'>Artist</p>
                     <button className='btn-dark-o shadow-orange'> ← </button> <button className='btn-dark-o shadow-orange'> →</button>
 
                 </div>
@@ -24,7 +24,7 @@ const Testimonials = () => {
                 </div>
             </div>
         </div>
-  </div>
+  </div> 
 }
 
 export default Testimonials
