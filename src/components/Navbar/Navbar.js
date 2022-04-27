@@ -38,10 +38,10 @@ const Navbar = () => {
           <div id="saide" className='side-bar'>
             <h1 onClick={closeSide}>x</h1>
             <ul className='side-links'>
-                <li><Link to='/'> Home </Link></li>
-                <li><Link to='/products'> Products </Link></li>
-                <li><Link to='/contact'> Contact</Link></li>
-                <li><Link to='/about'> About </Link></li>
+                <li onClick={closeSide}><Link to='/'> Home </Link></li>
+                <li onClick={closeSide}><Link to='/products'> Products </Link></li>
+                <li onClick={closeSide}><Link to='/contact'> Contact</Link></li>
+                <li onClick={closeSide}><Link to='/about'> About </Link></li>
             </ul>
       </div>
     </div>
