@@ -1,7 +1,6 @@
 .prod-body {
   line-height: 0;
   background: #f5f5f5;
-  ;
 }
 
 /* .product {
@@ -18,13 +17,12 @@
   text-align: center;
   color: rgb(231, 157, 19);
   margin: 0rem 0 3rem 0;
-
 }
 
 .menu-div {
   width: 90%;
   padding: 3rem 0;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
   flex-wrap: wrap;
@@ -36,7 +34,7 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 25px 40px rgba(128, 128, 128, 0.3);
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .pic {
@@ -63,11 +61,11 @@
   padding-bottom: 1rem;
 }
 
-.menu-cont h4{
+.menu-cont h4 {
   width: 70%;
   margin: 1.5rem 0;
   color: rgb(29, 29, 29);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   height: 3rem;
 }
 
@@ -90,13 +88,13 @@
   gap: 1rem;
   background: rgb(231, 157, 19, 0.5);
   color: #fff;
-  padding: .4rem .7rem;
+  padding: 0.4rem 0.7rem;
   border-radius: 7px;
 }
 
 .counter p {
   font-weight: 600;
-  color: rgb(29, 29, 29)
+  color: rgb(29, 29, 29);
 }
 
 .counter p:nth-child(3) {
@@ -117,7 +115,7 @@
   font-style: italic;
 }
 
-@media(max-width: 540px){
+@media (max-width: 540px) {
   .pic {
     background: rgb(231, 157, 19);
     height: 200px;
