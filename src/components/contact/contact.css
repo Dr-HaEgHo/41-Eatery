@@ -144,6 +144,7 @@ input:focus {
     color: rgb(29, 29, 29);
     text-align: center;
     margin: 0 0 2rem 0;
+    line-height: 28px;
   }
   .contact-us {
     font-size: 13px;

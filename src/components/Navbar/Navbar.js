@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import './navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { Icon } from '@iconify/react';
 
 
@@ -10,6 +10,7 @@ const Navbar = () => {
     // const [] = useState(showSide);
 
     const [open, setOpen] = useState(false)
+    const navigate = useNavigate()
 
     const sideBar = document.getElementById('saide');
 
@@ -58,10 +59,22 @@ const Navbar = () => {
         <div className={ open ? "side-bar-open" :"side-bar"}>
             <div onClick={() => {setOpen(false)}}><Icon className='close-icon' icon="ci:close-small" /></div>
             <ul className='side-links'>
-                <li onClick={() => {setOpen(false)}}> Home </li>
-                <li onClick={() => {setOpen(false)}}> Products </li>
-                <li onClick={() => {setOpen(false)}}> Contact</li>
-                <li onClick={() => {setOpen(false)}}>About </li>
+                <li onClick={() => {
+                    setOpen(false)
+                    navigate("/")
+                }}> Home </li>
+                <li onClick={() => {
+                    setOpen(false)
+                    navigate("/products")
+                }}> Products </li>
+                <li onClick={() => {
+                    setOpen(false)
+                    navigate("/contact")
+                }}> Contact</li>
+                <li onClick={() => {
+                    setOpen(false)
+                    navigate("/about")
+                }}>About </li>
             </ul>
       </div>
     </div>

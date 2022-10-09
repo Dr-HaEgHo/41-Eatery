@@ -146,6 +146,6 @@
     
     .side-links li {
         border-bottom: 0.5px rgba(0, 0, 0, 1) solid;
-    
+        cursor: pointer;
     }
  }
