@@ -28,7 +28,8 @@ const Navbar = () => {
     // }
 
  
-    return <div className='navbar-div'>
+    return(
+    <div className='navbar-div'>
         <div className='container navbar'>
             <div className='logo'>
                 <Link to="/"><p>41-Eatery</p></Link>
@@ -47,18 +48,24 @@ const Navbar = () => {
                 <button className='btn-dark'>Sign Up</button>
             </div> 
         </div>
+   
+        {/* <div className="bars-div">
+            <div onClick={() => {setOpen(false)}}><Icon className='close-icon' icon="ci:close-small" /></div>
+        </div> */}
+        
 
         {/* ------------------------------------------------------------------------sidebar */}
         <div className={ open ? "side-bar-open" :"side-bar"}>
             <div onClick={() => {setOpen(false)}}><Icon className='close-icon' icon="ci:close-small" /></div>
             <ul className='side-links'>
-                <li onClick={() => {setOpen(false)}}><Link to='/'> Home </Link></li>
-                <li onClick={() => {setOpen(false)}}><Link to='/products'> Products </Link></li>
-                <li onClick={() => {setOpen(false)}}><Link to='/contact'> Contact</Link></li>
-                <li onClick={() => {setOpen(false)}}><Link to='/about'> About </Link></li>
+                <li onClick={() => {setOpen(false)}}> Home </li>
+                <li onClick={() => {setOpen(false)}}> Products </li>
+                <li onClick={() => {setOpen(false)}}> Contact</li>
+                <li onClick={() => {setOpen(false)}}>About </li>
             </ul>
       </div>
     </div>
-}
+  );
+};
 
 export default Navbar;
