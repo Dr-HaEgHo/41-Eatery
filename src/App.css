@@ -23,6 +23,12 @@ ul li a:hover {
     font-size: 15px;
 }
 
+.close-icon{
+    color: rgb(231, 157, 19);
+    /* background: rgb(231, 157, 19); */
+    font-size: 34px;
+}
+
 .App {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;

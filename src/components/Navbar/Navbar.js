@@ -1,21 +1,33 @@
 import React from 'react'
+import {useState} from 'react'
 import './navbar.css'
 import { Link } from 'react-router-dom'
+import { Icon } from '@iconify/react';
 
 
 const Navbar = () => {
 
+    // const [] = useState(showSide);
+
+    const [open, setOpen] = useState(false)
+
     const sideBar = document.getElementById('saide');
-    const showSide = () => {
-        sideBar.style.width = "140px";
-        sideBar.style.padding = "1rem";
-    }
-    const closeSide = () => {
-        sideBar.style.width = "0px";
-        sideBar.style.padding = "0rem";
-    }
 
+    // function showSide (event) {
+    //     sideBar.style.width = "140px";
+    //     sideBar.style.padding = "1rem";
+    //     console.log('we dey prezz for here')
+    //     event.preventDefault();
+    // }
 
+    // function closeSide(event) {
+    //     sideBar.style.width = "0px";
+    //     sideBar.style.padding = "0rem";
+    //     console.log('we dey prezz for here too')
+    //     event.preventDefault();
+    // }
+
+ 
     return <div className='navbar-div'>
         <div className='container navbar'>
             <div className='logo'>
@@ -28,22 +40,22 @@ const Navbar = () => {
                 <li><Link to='/about'> About </Link></li>
             </ul>
             <div className='bars-div'>
-                <h1 onClick={showSide}>=</h1>
+                <div onClick={() => {setOpen(true)}}><Icon className='close-icon' icon="bx:menu" /></div>
             </div>
             <div className='btn-div'>
                 <button className='btn-light'>Login</button>
                 <button className='btn-dark'>Sign Up</button>
-            </div>
+            </div> 
         </div>
 
         {/* ------------------------------------------------------------------------sidebar */}
-          <div id="saide" className='side-bar'>
-            <h1 onClick={closeSide}>x</h1>
+        <div className={ open ? "side-bar-open" :"side-bar"}>
+            <div onClick={() => {setOpen(false)}}><Icon className='close-icon' icon="ci:close-small" /></div>
             <ul className='side-links'>
-                <li onClick={closeSide}><Link to='/'> Home </Link></li>
-                <li onClick={closeSide}><Link to='/products'> Products </Link></li>
-                <li onClick={closeSide}><Link to='/contact'> Contact</Link></li>
-                <li onClick={closeSide}><Link to='/about'> About </Link></li>
+                <li onClick={() => {setOpen(false)}}><Link to='/'> Home </Link></li>
+                <li onClick={() => {setOpen(false)}}><Link to='/products'> Products </Link></li>
+                <li onClick={() => {setOpen(false)}}><Link to='/contact'> Contact</Link></li>
+                <li onClick={() => {setOpen(false)}}><Link to='/about'> About </Link></li>
             </ul>
       </div>
     </div>
